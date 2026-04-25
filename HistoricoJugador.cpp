@@ -25,6 +25,19 @@ HistoricoJugador::HistoricoJugador(const HistoricoJugador &copiahistorico)
     tarRojas(copiahistorico.tarRojas),
     faltAcumuladas(copiahistorico.faltAcumuladas){}
 
+HistoricoJugador &HistoricoJugador::operator =(const HistoricoJugador &otro)
+{
+    if(this != &otro){
+        partJugados=otro.partJugados;
+        cantGoles=otro.cantGoles;
+        minJugados=otro.minJugados;
+        tarAmarillas=otro.tarAmarillas;
+        tarRojas=otro.tarRojas;
+        faltAcumuladas=otro.faltAcumuladas;
+    }
+    return *this;
+}
+
 void HistoricoJugador::actualizarHistorico(unsigned short cG, unsigned short mJ, unsigned short tAm, unsigned short tRo, unsigned short fAcc)
 {
     partJugados+=1;

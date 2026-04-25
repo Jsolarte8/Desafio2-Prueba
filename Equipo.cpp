@@ -1,17 +1,9 @@
+#include "HistoricoEquipo.h"
 #include "Equipo.h"
 using namespace std;
 
-Equipo::Equipo()
+Equipo::Equipo():pais(""),federacion(""),confederacion(""),directorTecnico(""),rankingFIFA(0),grupo(' '),historico(HistoricoEquipo())
 {
-    pais="";
-    federacion="";
-    confederacion="";
-    directorTecnico="";
-    rankingFIFA=0;
-    grupo=' ';
-
-    historico = HistoricoEquipo();
-
     cantJugadores=26;
     jugadores=new Jugador[cantJugadores];
 

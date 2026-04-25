@@ -65,11 +65,11 @@ int main()
     // actualizarArchivo(jugador.gethistorico(),1);
 
 
-    Equipo e1("Argentina","AFA","CONMEBOL","Scaloni",1,'A');
-    Equipo e2("Colombia","FCF","CONMEBOL","Lorenzo",12,'B');
+    // Equipo e1("Argentina","AFA","CONMEBOL","Scaloni",1,'A');
+    // Equipo e2("Colombia","FCF","CONMEBOL","Lorenzo",12,'B');
 
-    e1.actualizarHistoricoEquipo(2,1,3,0,5);
-    e2.actualizarHistoricoEquipo(1,1,2,0,4);
+    // e1.actualizarHistoricoEquipo(2,1,3,0,5);
+    // e2.actualizarHistoricoEquipo(1,1,2,0,4);
 
     // cout << "\n--- EQUIPO 1 ---" << endl;
     // e1.printJugadores();
@@ -82,31 +82,31 @@ int main()
     // e2.print();
 
     // // prueba operadores
-    e1.print();
-    e2.print();
-    if(e1 > e2){
-        cout << "\nArgentina esta mejor rankeado que Colombia" << endl;
-    }
-    else{
-        cout << "\nColombia esta mejor rankeado que Argentina" << endl;
-    }
+    // e1.print();
+    // e2.print();
+    // if(e1 > e2){
+    //     cout << "\nArgentina esta mejor rankeado que Colombia" << endl;
+    // }
+    // else{
+    //     cout << "\nColombia esta mejor rankeado que Argentina" << endl;
+    // }
 
-    Equipo e3(e1);
-    cout << "\n--- COPIA DE EQUIPO 1 ---" << endl;
-    e3.print();
+    // Equipo e3(e1);
+    // cout << "\n--- COPIA DE EQUIPO 1 ---" << endl;
+    // e3.print();
 
-    // prueba operador =
-    Equipo e4;
-    e4 = e2;
-    cout << "\n--- ASIGNADO DESDE EQUIPO 2 ---" << endl;
-    e4.print();
+    // // prueba operador =
+    // Equipo e4;
+    // e4 = e2;
+    // cout << "\n--- ASIGNADO DESDE EQUIPO 2 ---" << endl;
+    // e4.print();
 
     cout << "\n=========== PRUEBA CSV ===========\n";
 
     Equipo e5;
 
     // Leer del archivo
-    cargarEquipoDesdeArchivo(e5, "selecciones_clasificadas_mundial.csv", "Argentina");
+    cargarEquipoDesdeArchivo(e5, "selecciones_clasificadas_mundial.csv", "France");
 
     cout << "\n--- ANTES DE ACTUALIZAR ---" << endl;
     e5.print();

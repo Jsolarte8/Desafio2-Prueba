@@ -1,5 +1,5 @@
 #include "ArchivoEquipo.h"
-
+#include <fstream>
 void leerHistoricoEquipo(Equipo &equipo, const string &lineaCSV)
 {
     string dato = "";

@@ -15,6 +15,7 @@ public:
     HistoricoJugador();
     HistoricoJugador(unsigned short int pJ,unsigned short int cG,unsigned short int mJ, unsigned short int as, unsigned short int tAm, unsigned short int tRo, unsigned short int fAc);
     HistoricoJugador(const HistoricoJugador &copiahistorico);
+    HistoricoJugador& operator =(const HistoricoJugador &otro);
     void actualizarHistorico(unsigned short int cG, unsigned short int mJ, unsigned short int tAm,unsigned short int tRo,unsigned short int fAcc);
     unsigned short int getpartJugados()const;
     unsigned short int getcantGoles()const;

@@ -7,6 +7,15 @@ Jugador::Jugador(unsigned short numC):numCamiseta(numC),historico(HistoricoJugad
 
 Jugador::Jugador(const Jugador &copiaJugador):numCamiseta(copiaJugador.numCamiseta),historico(copiaJugador.historico){}
 
+Jugador &Jugador::operator =(const Jugador &otro)
+{
+    if(this != &otro){
+        numCamiseta=otro.numCamiseta;
+        historico=otro.historico;
+    }
+    return *this;
+}
+
 const HistoricoJugador& Jugador::gethistorico() const
 {
     return historico;
