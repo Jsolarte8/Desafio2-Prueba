@@ -105,21 +105,18 @@ int main()
 
     Equipo e5;
 
-    // Leer del archivo
     cargarEquipoDesdeArchivo(e5, "selecciones_clasificadas_mundial.csv", "France");
 
     cout << "\n--- ANTES DE ACTUALIZAR ---" << endl;
     e5.print();
 
-    // Modificar histórico
     e5.actualizarHistoricoEquipo(2, 1, 0, 0, 0);
 
-    // Guardar en el archivo
-    actualizarEquipoEnArchivo(e5, "selecciones_clasificadas_mundial.csv");
+    actualizarHistoricoEquipoArchivo(e5, "Historico_equipos.csv");
 
     cout << "\n--- DESPUES DE ACTUALIZAR ---" << endl;
     e5.print();
-    return 0;
+
 }
 
 
