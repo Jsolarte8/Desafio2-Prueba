@@ -1,5 +1,6 @@
 #include "HistoricoJugador.h"
 #include <iostream>
+#include<string>
 using namespace std;
 
 HistoricoJugador::HistoricoJugador()
@@ -121,16 +122,24 @@ void HistoricoJugador::setfaltAcumuladas(unsigned short fal)
 
 void HistoricoJugador::print() const
 {
-    cout<<"\n Historico:{"<<" Partidos jugados: "<<partJugados<<"\n Cantidad de goles:"<<cantGoles<<
-        " \n Minutos jugados: "<<minJugados<<"\n Asistencias: "<<asistencias<<
-        " \n Tarjetas amarillas: "<<tarAmarillas<<"\n Tarjetas rojas: "<<tarRojas<<
-        "\n Faltas acumuladas: "<<faltAcumuladas<<"}";
+    cout<<"Historico: {"<<endl
+         <<"Partidos jugados: "<<partJugados<<endl
+         <<"Cantidad de goles:"<<cantGoles<<endl
+         <<"Minutos jugados: "<<minJugados<<endl
+         <<"Asistencias: "<<asistencias<<endl
+         <<"Tarjetas amarillas: "<<tarAmarillas<<endl
+         <<"Tarjetas rojas: "<<tarRojas<<endl
+         <<"Faltas acumuladas: "<<faltAcumuladas<<endl
+         <<"}"<<endl;
 }
 
 HistoricoJugador::~HistoricoJugador()
 {
     //cout<<"\n La instancia de historico ha sido destruida correctamente"<<endl;
 }
+
+
+
 
 
 

@@ -69,7 +69,8 @@ OBJECTS       = release/ArchivoEquipo.o \
 		release/archivos.o \
 		release/main.o
 
-DIST          = selecciones_clasificadas_mundial.csv ArchivoEquipo.h \
+DIST          = Historico_jugadores.csv \
+		selecciones_clasificadas_mundial.csv ArchivoEquipo.h \
 		Equipo.h \
 		Grupo.h \
 		HistoricoEquipo.h \
@@ -162,7 +163,7 @@ release/Jugador.o: ../../Jugador.cpp ../../Jugador.h \
 		../../HistoricoJugador.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Jugador.o ..\..\Jugador.cpp
 
-release/Partido.o: ../../Partido.cpp ../../Grupo.h \
+release/Partido.o: ../../Partido.cpp ../../Partido.h \
 		../../Equipo.h \
 		../../Jugador.h \
 		../../HistoricoJugador.h \
@@ -178,7 +179,9 @@ release/main.o: ../../main.cpp ../../HistoricoJugador.h \
 		../../Jugador.h \
 		../../Equipo.h \
 		../../HistoricoEquipo.h \
-		../../ArchivoEquipo.h
+		../../ArchivoEquipo.h \
+		../../Grupo.h \
+		../../Partido.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
 ####### Install

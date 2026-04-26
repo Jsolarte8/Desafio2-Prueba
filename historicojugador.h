@@ -1,7 +1,7 @@
 #ifndef HISTORICOJUGADOR_H
 #define HISTORICOJUGADOR_H
-
-
+#include <string>
+using namespace std;
 class HistoricoJugador{
 private:
     unsigned short int partJugados;
@@ -32,7 +32,7 @@ public:
     void settarRojas(unsigned short int ro);
     void setfaltAcumuladas(unsigned short int fal);
     void print()const;
-    friend void actualizarArchivo(const HistoricoJugador &estadisticas, unsigned short int numeroCamiseta);
+    friend void actualizarArchivo(const HistoricoJugador &estadisticas, unsigned short int numeroCamiseta, const string &equipo);
     ~HistoricoJugador();
 };
 

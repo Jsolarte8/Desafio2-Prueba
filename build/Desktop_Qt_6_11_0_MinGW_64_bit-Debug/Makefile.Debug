@@ -69,7 +69,8 @@ OBJECTS       = debug/ArchivoEquipo.o \
 		debug/archivos.o \
 		debug/main.o
 
-DIST          = selecciones_clasificadas_mundial.csv ArchivoEquipo.h \
+DIST          = Historico_jugadores.csv \
+		selecciones_clasificadas_mundial.csv ArchivoEquipo.h \
 		Equipo.h \
 		Grupo.h \
 		HistoricoEquipo.h \
@@ -162,7 +163,7 @@ debug/Jugador.o: ../../Jugador.cpp ../../Jugador.h \
 		../../HistoricoJugador.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Jugador.o ..\..\Jugador.cpp
 
-debug/Partido.o: ../../Partido.cpp ../../Grupo.h \
+debug/Partido.o: ../../Partido.cpp ../../Partido.h \
 		../../Equipo.h \
 		../../Jugador.h \
 		../../HistoricoJugador.h \
@@ -178,7 +179,9 @@ debug/main.o: ../../main.cpp ../../HistoricoJugador.h \
 		../../Jugador.h \
 		../../Equipo.h \
 		../../HistoricoEquipo.h \
-		../../ArchivoEquipo.h
+		../../ArchivoEquipo.h \
+		../../Grupo.h \
+		../../Partido.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\..\main.cpp
 
 ####### Install

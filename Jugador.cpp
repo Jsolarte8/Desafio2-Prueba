@@ -38,7 +38,7 @@ void Jugador::sethistorico(unsigned short c, unsigned short m,unsigned short tA,
 
 void Jugador::print() const
 {
-    cout<<"\n Numero de camiseta: "<<numCamiseta;
+    cout<<"Jugador con numero de camiseta: "<<numCamiseta<<endl;
     this->historico.print();
 }
 
